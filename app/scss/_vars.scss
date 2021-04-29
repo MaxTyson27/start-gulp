@@ -1,0 +1,64 @@
+$accent: #79db5e;
+
+%gil-400{
+  font-family: 'Gilroy-Regular', sans-serif;
+  font-weight: 400;
+}
+
+%gil-500{
+  font-family: 'Gilroy-Medium', sans-serif;
+  font-weight: 500;
+}
+
+%gil-600{
+  font-family: 'Gilroy-SemiBold', sans-serif;
+  font-weight: 600;
+}
+
+%gil-700{
+  font-family: 'Gilroy-Bold', sans-serif;
+  font-weight: 700;
+}
+
+%pop-600{
+  font-family: 'Poppins-SemiBold', sans-serif;
+  font-weight: 600;
+}
+
+%pop-500{
+  font-family: 'Poppins-Medium', sans-serif;
+  font-weight: 500;
+}
+
+// Флексы
+
+@mixin flex-center () {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin flex-column ($align: center) {
+	display: flex;
+	flex-direction: column;
+	align-items: $align;
+}
+
+// Центрирование элемента внутри блока
+
+@mixin center-item ($position: absolute) {
+	position: $position; 
+	top: 50%; 
+	left: 50%; 
+	transform: translate(-50%, -50%);
+}
+@mixin center-item-y ($position: absolute) {
+	position: $position;
+	top: 50%; 
+	transform: translateY(-50%);
+};
+@mixin center-item-x ($position: absolute) {
+	position: $position;
+	left: 50%; 
+	transform: translateX(-50%);
+};

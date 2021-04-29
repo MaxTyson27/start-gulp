@@ -1,4 +1,23 @@
 
 body{
+  @extend %gil-400;
+  color: #2e2e2e;
+  font-size: 16px;
+}
 
+.container{
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+mark{
+  background-color: transparent !important;
+  color: $accent;
+}
+
+.title{
+  font-size: 3.75rem;
+  line-height: 4.75rem;
+  @extend %pop-600;
 }
