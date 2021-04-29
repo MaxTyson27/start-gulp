@@ -209,19 +209,65 @@
 }
 
 .info{
+  padding-bottom: 6.25rem;
   background-color: #fbfbfb;
   padding-top: 7.5rem;
+  &__items{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item-items{
+    width: 23.125rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
   &__item{
-    max-width: 21.25rem;
+    width: 21.25rem;
+    height: 17.625rem; 
+    padding-top: 1.875rem;
     background-color: #fff;
     border-radius: 10px;
-    height: 17.625rem;
+    display: flex;
+    justify-content: center;
+    background-repeat: no-repeat;
+    color: #2e2e2e;
+  }
+  &__item-small{
+    position: relative;
+    display: block;
+    border-radius: 10px;
+    background-color: #fff;
+    height: 7.875rem;
+    width: 23.125rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../images/info/price.png');
+    &:last-child{
+      background-image: url('../images/info/security.png');
+      
+    }
+  }
+  &__link{
+    position: absolute;
+    right: 5.625rem;
+    bottom: 2.0625rem;
+  }
+  &__item--pig{
+    background-position: center bottom;
+    background-image: url('../images/info/pig.png');
+  }
+  &__item--cycle{
+    background-position: center bottom;
+    background-image: url('../images/info/cycle.png');
   }
   &__item-title{
     font-size: 1.625rem;
     line-height: 2.375rem;
     @extend %gil-600;
-    max-width: 16.875rem;
+    max-width: 230px; 
   }
 }
 
