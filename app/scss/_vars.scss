@@ -62,3 +62,10 @@ $accent: #79db5e;
 	left: 50%; 
 	transform: translateX(-50%);
 };
+
+@function max($numbers...) {
+  @return m#{a}x(#{$numbers});
+}
+@function min($numbers...) {
+  @return m#{i}n(#{$numbers});
+}
