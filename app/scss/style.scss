@@ -213,9 +213,6 @@
   background-color: #fbfbfb;
   padding-top: 7.5rem;
   position: relative;
-  // background-image: url('../images/bottle.png');
-  // background-repeat: no-repeat;
-  // background-position: top left;
   &__bottle-decor{
     position: absolute;
     top: -230px;
@@ -280,6 +277,78 @@
   }
 }
 
+.products{
+  background-color: #fbfbfb;
+  &__inner{
+    
+  }
+  &__items{
+    display: flex;
+    position: relative;
+  }
+  &__items-top{
+    display: flex;
+    position: absolute;
+    left: -145px;
+    top: 0;
+    right: 0;
+  }
+  &__item{
+    display: block;
+    &:not(:last-child){
+      margin-right: 1.875rem;
+    }
+  }
+  &__buttons{
+    @include flex-center;
+    margin-bottom: 3.75rem;
+  }
+  &__item{
+    width: 14.5rem;
+    height: 14.5rem;
+    background-color: #fff;
+    box-shadow: 0px 34px 81px 0px rgba(149, 149, 149, 0.08);
+    border-radius: 10px;
+  }
+  &__item-content{
+    padding-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  .blueberries-item{
+    position: relative;
+    &::after,
+    &::before{
+      content: '';
+      position: absolute;
+      right: 1.5rem;
+      top: 1.25rem;
+      background-image: url('../images/products/vegan.png');
+      background-repeat: no-repeat;
+      width: 1.9375rem;
+      height: 1.1875rem;
+    }
+    &::after{
+      background-image: url('../images/products/gluten.png');
+      top: 52px;
+      width: 1.5625rem;
+      height: 1.5625rem;
+    }
+  }
+  &__item-image{
+    margin-bottom: 0.9375rem;
+  }
+  &__item-price{
+    color: #2e2e2e;
+    font-size: 30px;
+    line-height: 2.25rem;
+    @extend %gil-600;
+  }
+  
+}
 
 @import 'media';
 
