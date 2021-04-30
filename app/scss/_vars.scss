@@ -1,5 +1,21 @@
 $accent: #79db5e;
 
+%btn{
+  background-color: #fff;
+  @extend %gil-700;
+  font-size: 26px;
+  line-height: 36px;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all .3s;
+  border-radius: 10px;
+  &:hover{
+    color: #fff;
+    background-color: $accent;
+  }
+}
+
 %gil-400{
   font-family: 'Gilroy-Regular', sans-serif;
   font-weight: 400;

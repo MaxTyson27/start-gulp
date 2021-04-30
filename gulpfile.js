@@ -32,6 +32,7 @@ function styles() {
 function scripts() {
   return src([
     'node_modules/jquery/dist/jquery.js',
+    // 'node_modules/uikit/dist/js/uikit.js',
     'node_modules/jquery-match-height/dist/jquery.matchHeight.js',
     'app/js/main.js'
   ])

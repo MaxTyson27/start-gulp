@@ -3,6 +3,17 @@ body{
   @extend %gil-400;
   color: #2e2e2e;
   font-size: 16px;
+  
+}
+
+.wrapper {
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+*{
+  outline: transparent;
 }
 
 .container{
