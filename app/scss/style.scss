@@ -212,6 +212,15 @@
   padding-bottom: 6.25rem;
   background-color: #fbfbfb;
   padding-top: 7.5rem;
+  position: relative;
+  // background-image: url('../images/bottle.png');
+  // background-repeat: no-repeat;
+  // background-position: top left;
+  &__bottle-decor{
+    position: absolute;
+    top: -230px;
+    left: 0;
+  }
   &__items{
     display: flex;
     justify-content: space-between;
